@@ -1,3 +1,5 @@
+
+
 <DOCTYPE html>
      <html lang="en">
          <head>
@@ -6,5 +8,10 @@
          </head>
          <body>
              <h1>Hello BikeShop!</h1>
+             <label> 
+                <?php include('bikes.php');?> <br> 
+             </label>
          </body>
     </html>
+
+    
