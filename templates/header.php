@@ -4,21 +4,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <style type="text/css">
 
-</style>     
+.brand{
+    background: #cbb09c !important;
+}
 
-</head>
-    <body class="grey loghten-4"> 
-        <nav clss="white z-depth-0">
+.brand-text{
+    color: #cbb09c !important;
+}
+form{
+    max-width: 460px;
+    margin: 20px auto;
+    padding 20px;
+}
+
+</style>    
+</head> 
+    <body class="grey lighten-4"> 
+        <nav class="white z-depth-0">
             <div class="container">
-                <a href="#" class="brand-logo-text">Bike Shop</a>
+                <a href="#" class="brand-logo brand-text">BikeShop</a>
                 <ul id="nav-mobile" class="right hide-on-small-and-down">
-                    <li><a href="#" class="btn brand z-depth-0">Registration</a></li>  
-                    <li><a href="#" class="btn brand z-depth-0">Sign in</a></li>  
-                    <li><a href="#" class="btn brand z-depth-0">About Us</a></li>
-                    <li><a href="#" class="btn brand z-depth-0">Shop</a></li>    
-                    <li><a href="#" class="btn brand z-depth-0">Add a new bike</a></li> 
-                    <li><a href="#" class="btn brand z-depth-0">Add a new admin</a></li>
-                    <li><a href="#" class="btn brand z-depth-0">Contacts</a></li>      
+                    <li><a href="#" class="btn brand z-depth-0">Contacts</a></li> 
+                    <li><a href="add.php" class="btn brand z-depth-0">Add a Bike</a></li>      
+                  
                 </ul>
             </div>
         </nav>
