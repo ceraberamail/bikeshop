@@ -1,14 +1,6 @@
 <?php
 
-// database connection
-
-$conn = mysqli_connect('localhost','user','user','bikeshop');
-
-// check
-
-if(!$conn){
-echo 'connection error: ' .mysqli_connect_error();
-}
+include('db_connect.php');
 
 // query
 
@@ -47,7 +39,7 @@ mysqli_close($conn);
             <div class="col s6 md3">
                 <div class="card z-depht-0">
                     <div class="card-cpntent center">
-                        <h6><?php echo htmlspecialchars($bike['name']);?></h6>
+                        <h6><?php echo htmlspecialchars($bike['name'].'('.$bike['id'].')');?></h6>
                         <div> <?php echo htmlspecialchars($bike['brand']);?></div>
                         <div> <?php echo htmlspecialchars($bike['color']);?></div>
                         <div> <?php echo htmlspecialchars($bike['description']);?></div>
