@@ -42,11 +42,10 @@ mysqli_close($conn);
                         <h6><?php echo htmlspecialchars($bike['name'].'('.$bike['id'].')');?></h6>
                         <div> <?php echo htmlspecialchars($bike['brand']);?></div>
                         <div> <?php echo htmlspecialchars($bike['color']);?></div>
-                        <div> <?php echo htmlspecialchars($bike['description']);?></div>
                         <div> <?php echo htmlspecialchars($bike['price'].' HUF');?></div>
                     </div>
                     <div class="card-action right-align">
-                    <a href="#" class="brand-text">more info</a>
+                    <a href="details.php?id=<?php echo $bike['id']?>" class="brand-text">more info</a>
                 </div>
             </div>
         </div>
