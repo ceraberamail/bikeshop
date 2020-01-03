@@ -38,6 +38,7 @@ mysqli_close($conn);
 
             <div class="col s6 md3">
                 <div class="card z-depht-0">
+                    <img src="img/bike_image.svg" class="bike">
                     <div class="card-cpntent center">
                         <h6><?php echo htmlspecialchars($bike['name'].'('.$bike['id'].')');?></h6>
                         <div> <?php echo htmlspecialchars($bike['brand']);?></div>
@@ -46,6 +47,7 @@ mysqli_close($conn);
                     </div>
                     <div class="card-action right-align">
                     <a href="details.php?id=<?php echo $bike['id']?>" class="brand-text">more info</a>
+                    
                 </div>
             </div>
         </div>
