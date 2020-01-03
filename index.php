@@ -1,62 +1,22 @@
 <?php
 
-include('db_connect.php');
 
-// query
 
-$sql = 'SELECT id, brand, color, name, description, price FROM bikes ';
 
-// make query and get result
+include "db_connect.php";
 
-$result = mysqli_query($conn, $sql);
 
-// fetch the resulting rows
-$bikes = mysqli_fetch_all($result, MYSQLI_ASSOC);
+$page = isset($_GET['p']) ? $_GET['p'] : 'home';
 
-// free result
+echo ($page);
 
-mysqli_free_result($result);
+$conn = mysqli_connect('localhost','user','user','bikeshop');
 
-// close connection
+if (file_exists("$page.php")) {
+    include "$page.php";
+} else {
+    echo 'ups... 404';
+}
 
 mysqli_close($conn);
 
-//print_r($bikes);
-
-?>
-
-<!DOCTYPE html>
-<html>
-
-<?php  include('templates/header.php'); ?>
-
-
-<h4 class="center grey-text">Bikes</h4>
-<div class="container">
-    <div class="row">
-        <?php  foreach($bikes as $bike){?>
-
-            <div class="col s6 md3">
-                <div class="card z-depht-0">
-                    <img src="img/bike_image.svg" class="bike">
-                    <div class="card-cpntent center">
-                        <h6><?php echo htmlspecialchars($bike['name'].'('.$bike['id'].')');?></h6>
-                        <div> <?php echo htmlspecialchars($bike['brand']);?></div>
-                        <div> <?php echo htmlspecialchars($bike['color']);?></div>
-                        <div> <?php echo htmlspecialchars($bike['price'].' HUF');?></div>
-                    </div>
-                    <div class="card-action right-align">
-                    <a href="details.php?id=<?php echo $bike['id']?>" class="brand-text">more info</a>
-                    
-                </div>
-            </div>
-        </div>
-            
-        <?php } ?>
-    </div>
-</div>
-<?php  include('templates/footer.php'); ?>
-
-</body>
-</html>
- 

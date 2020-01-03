@@ -1,10 +1,12 @@
+
+
 <?php
 
 include('db_connect.php');
 
 $errors = array('price'=>'', 'brand' => '', 'name' => '', 'color'=>'', 'description'=>'');
 $price=$brand=$name=$color=$description='';
-$signed_in = false;
+
 
 if(isset($_POST['submit'])){
     echo htmlspecialchars($_POST['price']);
@@ -64,10 +66,7 @@ if(empty($_POST['color'])){
 }
 
 
-if($signed_in)
-{
-    echo 'signed in';
-}
+
 // check description
 if(empty($_POST['description'])){             // ha üres a description
     $errors['description'] = 'A description is required';

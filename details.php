@@ -1,3 +1,4 @@
+
  <?php
  
 include('db_connect.php');
@@ -10,7 +11,7 @@ if(isset($_POST['delete'])){
 
     if(mysqli_query($conn, $sql)){
         // success
-        header('Location: index.php');
+        header('Location: shop.php');
     }
     else{
         echo 'query error:' . mysqli_error($conn);
@@ -37,6 +38,8 @@ if(isset($_POST['delete'])){
 
     
  }
+
+ 
  
  
  ?>

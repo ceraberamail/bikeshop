@@ -6,8 +6,8 @@
     <ul>
                     <li><a href="#" class="btn brand z-depth-0">Registration</a></li>  
                     <li><a href="#" class="btn brand z-depth-0">Sign in</a></li>  
-                    <li><a href="#" class="btn brand z-depth-0">About Us</a></li>
-                    <li><a href="index.php" class="btn brand z-depth-0">Shop</a></li>    
+                    <li><a href="about.php" class="btn brand z-depth-0">About Us</a></li>
+                    <li><a href="shop.php" class="btn brand z-depth-0">Shop</a></li>    
                    
                     </ul>
 </div>
