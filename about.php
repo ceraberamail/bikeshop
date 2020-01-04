@@ -1,6 +1,5 @@
 
 <?php include "templates/header.php"; ?>
-
 <h1>About Us</h1>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus pariatur obcaecati id error illo nam! Amet numquam voluptatum veniam, magni dignissimos, vel perspiciatis, delectus aperiam beatae fugit ipsum placeat dolore?</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut animi quidem repellat eligendi beatae atque vel. Eum adipisci recusandae iusto, aspernatur consequatur voluptatibus accusamus! Magnam dolorum aliquid repellendus sapiente ipsa!
