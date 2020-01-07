@@ -1,6 +1,5 @@
 
 <?php include "templates/header.php"; ?>
-
 <h1>About Us</h1>
 <p>What We Sell</p>
 <p>
