@@ -6,7 +6,7 @@
 include "db_connect.php";
 
 
-$page = isset($_GET['p']) ? $_GET['p'] : 'home';
+$page = 'home';
 
 echo ($page);
 
