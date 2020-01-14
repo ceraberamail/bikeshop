@@ -49,6 +49,6 @@ if ($stmt = $con->prepare('SELECT id, password FROM users WHERE username = ?')) 
         echo 'Incorrect username!';}
         header("Refresh: 3;url= sign_in.php");exit;
 
-	$stmt->close();}
-
+    $stmt->close();}
+   
 ?>
