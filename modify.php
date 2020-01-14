@@ -20,22 +20,23 @@ $duperdescription;
 
 if(isset($_POST['modify'])){
 
-    //echo('modify');
+    echo('modify');
 
     $id_to_modify = mysqli_real_escape_string($conn, $_POST['id_to_modify']);
 
-  // echo ($id_to_modify);
+  echo ($id_to_modify);
 
 
     $sql = "SELECT * FROM bikes WHERE id = $id_to_modify";
 
-    // get the query result
+    //get the query result
     $result = mysqli_query($conn, $sql);
 
     // fetch result in array format
     $bike = mysqli_fetch_assoc($result);
 
-    //echo (' Bike name: ' . $bike['name']);
+    echo (' Bike name: ' . $bike['name']);
+    
     $supername = $name = $bike['name'];
     $superbrand = $brand = $bike['brand'];
     $supercolor = $color = $bike['color'];
@@ -45,8 +46,8 @@ if(isset($_POST['modify'])){
    
 
     if(mysqli_query($conn, $sql)){
-        // success
-        //echo('modify success');
+        //success
+        echo('modify success');
     }
     else{
         echo 'query error:' . mysqli_error($conn);
@@ -61,6 +62,9 @@ if(isset($_POST['modify'])){
 
 if(isset($_POST['submit'])){
 
+
+echo('submit');
+
     $update = true;
 
     $id_to_modify = mysqli_real_escape_string($conn, $_POST['id_to_modify']);
@@ -68,13 +72,13 @@ if(isset($_POST['submit'])){
     $supercolor = mysqli_real_escape_string($conn, $_POST['color']);
     $superprice = mysqli_real_escape_string($conn, $_POST['price']);
     $superdescription = mysqli_real_escape_string($conn, $_POST['description']);
-    //echo ('submit: id_to_modify:'.$id_to_modify);
+    echo ('submit: id_to_modify:'.$id_to_modify);
     $update=true;
-    //echo($id_to_modify);
-    //echo(' submit: $_POST[naem]' . $_POST['name']);
+    echo($id_to_modify);
+    echo(' submit: $_POST[naem]' . $_POST['name']);
    
     $supername = $name2 = mysqli_real_escape_string($conn, $_POST['name']);
-    //echo (' name2'.$name2);
+    echo (' name2'.$name2);
 
     
     
@@ -93,7 +97,7 @@ else{
     echo 'query error:' . mysqli_error($conn);
 }
 
-    header('Location: shop.php');
+    header('Location: shop_admin.php');
 }
 
 
