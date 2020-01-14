@@ -4,7 +4,7 @@
 
 // database connection
 
-$conn = mysqli_connect('localhost','user','user','bikeshop');
+$conn = mysqli_connect('localhost','root','root','bikeshop');
 
 // check
 
