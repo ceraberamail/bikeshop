@@ -147,7 +147,7 @@ if(mysqli_query($conn, $sql)){
 <div class="container">
     <ul>
                     
-                    <li><a href="shop.php" class="btn brand z-depth-0">Delete / Modify</a></li>    
+                    <li><a href="shop_admin.php" class="btn brand z-depth-0">Delete / Modify</a></li>    
                    
                     </ul>
 </div>

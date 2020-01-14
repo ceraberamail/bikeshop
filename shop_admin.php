@@ -51,7 +51,7 @@ mysqli_close($conn);
                         <div> <?php echo htmlspecialchars($bike['price'].' HUF');?></div>
                     </div>
                     <div class="card-action right-align">
-                    <a href="details_for_user.php?id=<?php echo $bike['id']?>" class="brand-text">order</a>
+                    <a href="details.php?id=<?php echo $bike['id']?>" class="brand-text">more info</a>
                     
                 </div>
             </div>
