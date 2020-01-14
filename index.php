@@ -1,16 +1,13 @@
 <?php
 
-
-
-
 include "db_connect.php";
 
 
 $page = 'home';
 
-echo ($page);
+//echo ($page);
 
-$conn = mysqli_connect('localhost','user','user','bikeshop');
+$conn = mysqli_connect('localhost','root','root','bikeshop');
 
 if (file_exists("$page.php")) {
     include "$page.php";
@@ -19,4 +16,6 @@ if (file_exists("$page.php")) {
 }
 
 mysqli_close($conn);
+
+?>
 
